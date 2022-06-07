@@ -1,0 +1,18 @@
+inputSet:
+  identifier: "inputSet1"
+  name: "inputSet1"
+  orgIdentifier: "default"
+  projectIdentifier: "proj1"
+  pipeline:
+    identifier: "pipeline1"
+    stages:
+    - stage:
+        identifier: "Stage1"
+        type: "Deployment"
+        spec:
+          infrastructure:
+            infrastructureDefinition:
+              type: "KubernetesDirect"
+              spec:
+                connectorRef: "k8s1"
+                namespace: "namespace"
