@@ -1,0 +1,19 @@
+connector:
+  name: k8s1
+  identifier: k8s1
+  description:
+  orgIdentifier: default
+  projectIdentifier: proj1
+  type: K8sCluster
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        masterUrl: https://34.66.78.221/
+        auth:
+          type: ServiceAccount
+          spec:
+            serviceAccountTokenRef: serviceAccountToken1
+            caCertRef: null
+    delegateSelectors:
+    - account-delegate-1654588962
